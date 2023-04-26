@@ -31,8 +31,11 @@ async function fetchAll(endpoint){
 }
 let timetaken = Date.now() - start;
 
-let pall = document.getElementById("output-all");
-pall.innerText = timetaken; 
+setTimeout(()=>{
+	let pall = document.getElementById("output-all");
+	pall.innerText = timetaken; 
+}, 1000)
+
 
 start = Date.now();
 async function fetchAll(endpoint){
@@ -48,5 +51,8 @@ async function fetchAll(endpoint){
 }
 timetaken = Date.now() - start;
 
- let pany = document.getElementById("output-any");
-pany.innerText = timetaken; 
+setTimeout(()=>{
+	let pany = document.getElementById("output-any");
+	pany.innerText = timetaken; 
+	
+}, 2000) 
